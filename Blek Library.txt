@@ -110,9 +110,9 @@ function Library:Create(table)
 
     minimizeButton.Name = "minimizeButton"
     minimizeButton.BackgroundTransparency = 1
-    minimizeButton.Size = UDim2.fromOffset(20, 20)
+    minimizeButton.Size = UDim2.fromOffset(18, 18)
     minimizeButton.Position = UDim2.fromOffset(450, 9)
-    minimizeButton.Image = "rbxassetid://10723346553"
+    minimizeButton.Image = "rbxassetid://10734895698"
     minimizeButton.ImageColor3 = theme.CloseButtonIcon
     minimizeButton.Parent = titleBar
 
@@ -184,12 +184,12 @@ function Library:Create(table)
         if isMinimized then
             TweenService:Create(main, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = uiSize}):Play()
             contentFrame.Visible = true
-            minimizeButton.Image = "rbxassetid://10723346553"
+            minimizeButton.Image = "rbxassetid://10734895698"
             isMinimized = false
         else
             TweenService:Create(main, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromOffset(500, 35)}):Play()
             contentFrame.Visible = false
-            minimizeButton.Image = "rbxassetid://10709768939"
+            minimizeButton.Image = "rbxassetid://10734886735"
             isMinimized = true
         end
     end)
